@@ -1,0 +1,16 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="aframe-ar.js"> </script>
+<body style='margin : 0px; overflow: hidden;'>
+<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+    <a-marker preset='custom' url='pattern.patt'>
+        <a-box position='0 0.5 0' material='color: green;opacity: 0.5'></a-box>
+    </a-marker>
+    <a-marker preset='hiro'>
+        <a-box position='0 0.5 0' material='color: red;opacity: 0.5'></a-box>
+    </a-marker>
+    <a-entity camera></a-entity>
+</a-scene>
+</body>
+</html>
